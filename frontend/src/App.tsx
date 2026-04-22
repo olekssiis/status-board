@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Correll Tech Status Board</h1>
+        <h1>Status Board</h1>
       </header>
 
       {/* FORM SECTION */}
@@ -102,7 +102,7 @@ function App() {
         {loading ? (
           <p className="loading-text">Loading updates from server...</p>
         ) : statuses.length === 0 ? (
-          <p className="empty-text">✨ All systems operational. No updates reported.</p>
+          <p className="empty-text">All systems operational. No updates reported.</p>
         ) : (
           statuses.map(s => (
             <div key={s.id} className={`card severity-${s.severity}`}>
